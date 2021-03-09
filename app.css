@@ -6,15 +6,15 @@ body {
 }
 
 .jumbotron {
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: 640px;
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 70px;
     font-family: 'Roboto Mono', monospace;
     color: white;
-    margin-left: 20px;
+    margin-left: 40px;
     text-shadow: 2px 2px gray;
 }
 
@@ -32,14 +32,14 @@ h1 {
 .header {
     list-style-type: none;
     color: white;
-    font-size: 34px;
+    font-size: 30px;
     text-shadow: 2px 2px gray;
     font-family: 'Roboto Mono', monospace;
 }
 
 a {
     color: white;
-    font-size: 26px;
+    font-size: 22px;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -56,13 +56,18 @@ a:hover {
     margin-left: 120px;
 }
 
+.ul-3 {
+    margin-left: 8px;
+}
+
 
 .ul-4 {
-    margin-left: 80px;
+    margin-left: 85px;
     margin-right: 70px;
 }
 
 
 .searchBar {
     margin-top: 60px;
+    margin-left: 35px;
 }

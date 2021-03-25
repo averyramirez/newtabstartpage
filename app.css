@@ -1,8 +1,16 @@
 body {
     background-image: url('https://images.unsplash.com/photo-1475257026007-0753d5429e10?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    display: flex;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overscroll-behavior: contain;
+    margin-bottom: 40px;
+    height: 100%;
+    overflow: auto;
 }
 
 
@@ -46,7 +54,8 @@ h3.text-left {
 }
 
 .searchBar {
-    padding-left: 220px;
+    margin-top: 50px;
+    padding-left: 290px;
     width: 800px;
 }
 
@@ -70,15 +79,14 @@ a:hover {
 }
 
 
-
-.searchBar {
-    margin-top: 60px;
-    margin-left: 35px;
-}
-
 @media (max-width: 500px) {
     h1.text-center {
         margin-left: 20px;
         font-size: 50px;
+    }
+
+    .searchBar {
+        padding-left: 0px;
+        width: 400px;
     }
 }

@@ -5,37 +5,47 @@ body {
     display: flex;
 }
 
-.jumbotron {
-    margin-top: 60px;
-    margin-left: 640px;
-}
 
-h1 {
-    font-size: 70px;
+h1.text-center {
+    font-size: 90px;
     font-family: 'Roboto Mono', monospace;
     color: white;
-    margin-left: 40px;
     text-shadow: 2px 2px gray;
-}
-
-.row-1, .row-2 {
     justify-content: center;
-    align-content: middle;
-    display: flex;
+    margin-left: 280px;
 }
 
-
-.no-bullets {
-    list-style-type: none;
-}
-
-.header {
-    list-style-type: none;
+h3.text-right {
+    font-size: 40px;
     color: white;
-    font-size: 30px;
     text-shadow: 2px 2px gray;
     font-family: 'Roboto Mono', monospace;
+    margin-right: 50px;
 }
+
+.text-right {
+    margin-right: 50px;
+    color: white;
+}
+
+h3.text-left {
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px gray;
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 50px;
+}
+
+.text-left {
+    margin-left: 50px;
+    color: white;
+}
+
+.row {
+    margin-top: 80px;
+}
+
+
 
 a {
     color: white;
@@ -45,29 +55,25 @@ a {
 
 a:link, a:visited, a:active {
     text-decoration: none;
+    color: white;
 }
 
 a:hover {
     text-decoration: none;
     text-shadow: 2px 2px gray;
+    color: white;
 }
 
-.ul-2 {
-    margin-left: 120px;
-}
-
-.ul-3 {
-    margin-left: 8px;
-}
-
-
-.ul-4 {
-    margin-left: 95px;
-    margin-right: 70px;
-}
 
 
 .searchBar {
     margin-top: 60px;
     margin-left: 35px;
+}
+
+@media (max-width: 500px) {
+    h1.text-center {
+        margin-left: 20px;
+        font-size: 50px;
+    }
 }

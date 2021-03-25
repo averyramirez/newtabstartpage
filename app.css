@@ -42,7 +42,12 @@ h3.text-left {
 }
 
 .row {
-    margin-top: 80px;
+    margin-top: 50px;
+}
+
+.searchBar {
+    padding-left: 220px;
+    width: 800px;
 }
 
 

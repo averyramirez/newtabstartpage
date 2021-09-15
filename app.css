@@ -19,7 +19,7 @@ h1.text-center {
     text-shadow: 1px 1px white;
     letter-spacing: 5px;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 240px;
     margin-bottom: 50px;
     padding-top: 20px;
 }
@@ -34,9 +34,11 @@ h3 {
 
 .searchBar {
     margin-top: 50px;
-    padding-bottom: 25px;
-    padding-left: 290px;
-    width: 800px;
+    padding-bottom: 50px;
+}
+
+.q {
+    width: 400px;
 }
 
 a {
@@ -57,7 +59,7 @@ a:hover {
 }
 
 .container {
-    background-color: rgba(148, 94, 218, 0.062);
+    background-color: rgba(255, 182, 237, 0.062);
     border-radius: 20px;
 }
 

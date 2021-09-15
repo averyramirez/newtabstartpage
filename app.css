@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');
+    background-image: url('background.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -8,6 +8,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     overscroll-behavior: contain;
+    background-position: bottom;
     height: 100%;
     overflow: auto;
 }
@@ -41,7 +42,7 @@ h3 {
 }
 
 .searchInput {
-    width: 520px;
+    width: 500px;
     outline: none;
     border-width: 0px;
     border: none;
@@ -61,11 +62,7 @@ h3 {
     opacity: 0.8;
     font-family: 'Electrolize', sans-serif;
 }
-  
 
-.time {
-    padding-top: 20px;
-}
 
 a {
     color: white;
@@ -87,12 +84,23 @@ a:hover {
 .container {
     background-color: rgba(255, 182, 237, 0.062);
     border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .btn {
     color: white !important;
 }
 
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.searchIcon {
+    width: 17px;
+    height: 17px;
+}
 
 /* @media (max-width: 500px) {
     h1.text-center {

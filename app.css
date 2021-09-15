@@ -35,7 +35,32 @@ h3 {
 .searchBar {
     margin-top: 50px;
     padding-bottom: 50px;
+    border-width: 0px;
+    border: none;
+    outline: none;
 }
+
+.searchInput {
+    width: 450px;
+    outline: none;
+    border-width: 0px;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.searchInput:focus, textarea:focus, select:focus{
+    outline: none;
+    border-width: 0px;
+    border: none;
+}
+
+::placeholder { 
+    color: white;
+    opacity: 0.8;
+}
+  
 
 .time {
     padding-top: 20px;

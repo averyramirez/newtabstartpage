@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Tab</title>
     <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
@@ -20,8 +19,86 @@
 <body>
 
 
-
 <div class="container">
+    <div class="row">
+        <!-- 1 -->
+        <div class="col-5 offset-1" id="leftTop">
+            <!-- Date and time -->
+            <div class="date text-center">
+                    <div id="time"></div>
+            </div>
+
+            <!-- Search bar -->
+            <div class="searchBar text-center">
+                <form action="https://google.com/search" target="_blank">
+                    <input class="searchInput" name="q" placeholder="Search Google..." autocomplete="off">
+                    <button class="btn" type="submit"><img class="searchIcon" src="searchIcon.png"></button>
+                </form>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="col-6" id="rightTop">
+            <div class="icons">
+                <div class="row">
+                    <div class="col">
+                        <img id="reddit" class="icon" src="icons/reddit.png">
+                    </div>
+                    <div class="col">
+                        <img id="youtube" class="icon" src="icons/youtube.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img id="instagram" class="icon" src="icons/instagram.png">
+                    </div>
+                    <div class="col">
+                        <img id ="mail" class="icon" src="icons/mail.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 -->
+
+    <div class="row">
+        <div class="col-6" id="leftBottom">
+            <div class="icons">
+                <div class="row">
+                    <div class="col">
+                        <img id="linkedIn" class="icon" src="icons/linkedin.png">
+                    </div>
+                    <div class="col">
+                        <img id="twitter" class="icon" src="icons/twitter.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img id="spotify" class="icon" src="icons/spotify.png">
+                    </div>
+                    <div class="col">
+                        <img id="github" class="icon" src="icons/github.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="col-5" id="rightBottom">
+            <div class="toDo text-center">
+                <h4 id="listHeader">To-do list:</h4>
+                <input type="text" id="myInput" placeholder="Type here...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+                <ul id="myUL">
+                    <li class="checked">Walk Mazzy</li>
+                    <li>Go to the farmers market</li>
+                </ul>
+            </div>
+    </div>
+</div>
+</div>
+
+
+<!-- <div class="container">
     <h1 class="text-center">Hello, Avery!</h1>
     <h2 class="text-center">
         <div id="time"></div>
@@ -30,7 +107,7 @@
     <div class="row">
         <div class="col-2 offset-1">
             <h3 class="text-center">General</h3>
-                <div class="text-center">
+                <div class="links text-center">
                     <a href="https://www.gmail.com" target="_blank">Gmail</a>
                     <br>
                     <a href="https://www.missionfed.com" target="_blank">Banking</a>
@@ -43,7 +120,7 @@
 
         <div class="col-2">
             <h3 class="text-center">Web Dev</h3>
-                <div class="text-center">
+                <div class="links text-center">
                         <a href="https://www.github.com" target="_blank">GitHub</a>
                         <br>
                         <a href="https://www.dev.to" target="_blank">Dev.To</a>
@@ -56,7 +133,7 @@
     
             <div class="col-2">
                 <h3 class="text-center">Social</h3>
-                    <div class="text-center">
+                    <div class="links text-center">
                         <a href="https://www.twitter.com" target="_blank">Twitter</a>
                         <br>
                         <a href="https://www.instagram.com" target="_blank">Instagram</a>
@@ -69,7 +146,7 @@
 
             <div class="col-2">
                 <h3 class="text-center">Blogs</h3>
-                    <div class="text-center">
+                    <div class="links text-center">
                         <a href="https://www.realitytea.com" target="_blank">Reality Tea</a>
                         <br>
                         <a href="https://www.lovebscott.com" target="_blank">Love B. Scott</a>
@@ -82,7 +159,7 @@
 
             <div class="col-2">
                 <h3 class="text-center">Stream</h3>
-                    <div class="text-center">
+                    <div class="links text-center">
                             <a href="https://www.spotify.com" target="_blank">Spotify</a>
                             <br>
                             <a href="https://stitcher.com" target="_blank">Stitcher</a>
@@ -103,8 +180,7 @@
         </div>
     </div>
 
-    </div>
->
+    </div> -->
 
 
 

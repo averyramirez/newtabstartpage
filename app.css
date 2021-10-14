@@ -91,10 +91,12 @@ body {
 
 #listHeader {
     margin-top: 20px;
+    font-size: 40px;
+    margin-left: 10px;
 }
 
 #myInput {
-    width: 200px;
+    width: 150px;
     outline: none;
     border-width: 0px;
     border: none;
@@ -105,6 +107,9 @@ body {
     margin-top: 40px;
 }
 
+.addBtn {
+    margin-left: 50px;
+}
 
 ul {
     background-color: transparent;

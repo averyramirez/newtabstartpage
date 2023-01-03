@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Tab</title>
+    <title>Hello, Avery!</title>
     <link rel="stylesheet" href="app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,167 +20,66 @@
 
 
 <div class="container">
-    <div class="row">
-        <!-- 1 -->
-        <div class="col-5 offset-1" id="leftTop">
-            <!-- Date and time -->
-            <div class="date text-center">
+    <div class="main">
+        <div class="row justify-content-end">
+            <div class="col offset-md-1">
+                <!-- Date and time -->
+                <div class="date text-center">
                     <div id="time"></div>
-            </div>
-
-            <!-- Search bar -->
-            <div class="searchBar text-center">
-                <form action="https://google.com/search" target="_blank">
-                    <input class="searchInput" name="q" placeholder="Search Google..." autocomplete="off">
-                    <button class="btn" type="submit"><img class="searchIcon" src="searchIcon.png"></button>
-                </form>
-            </div>
-        </div>
-        <!-- 2 -->
-        <div class="col-6" id="rightTop">
-            <div class="icons">
-                <div class="row">
-                    <div class="col">
-                        <a href="https://www.reddit.com" target="_blank"><img id="reddit" class="icon" src="icons/reddit.png"></a>
-                    </div>
-                    <div class="col">
-                        <a href="https://www.youtube.com" target="_blank"><img id="youtube" class="icon" src="icons/youtube.png"></a>
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <a href="https://www.instagram.com" target="_blank"><img id="instagram" class="icon" src="icons/instagram.png"></a>
-                    </div>
-                    <div class="col">
-                        <a href="https://www.gmail.com" target="_blank"><img id ="mail" class="icon" src="icons/mail.png"></a>
-                    </div>
+
+                <!-- Search bar -->
+                <div class="searchBar text-center">
+                    <form action="https://google.com/search" target="_blank">
+                        <input class="searchInput" name="q" placeholder="Search Google..." autocomplete="off">
+                        <button class="btn" type="submit"><img class="searchIcon" src="searchIcon.png"></button>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- 3 -->
-
-    <div class="row">
-        <div class="col-6" id="leftBottom">
-            <div class="icons">
-                <div class="row">
-                    <div class="col">
-                        <a href="https://www.linkedin.com" target="_blank"><img id="linkedIn" class="icon" src="icons/linkedin.png"></a>
-                    </div>
-                    <div class="col">
-                        <a href="https://www.twitter.com" target="_blank"><img id="twitter" class="icon" src="icons/twitter.png"></a>
-                    </div>
+        <!-- Links -->
+        <div class="links">
+            <div class="row justify-content-end">
+                <div class="col offset-md-1">
+                    <ul>
+                        <li class="social">~/social</li>
+                        <li><a href="http://www.instagram.com" target="_blank">instagram</a></li>
+                        <li><a href="http://www.linkedin.com" target="_blank">linkedin</a></li>
+                        <li><a href="http://www.reddit.com" target="_blank">reddit</a></li>
+                        <li><a href="http://www.twitter.com" target="_blank">twitter</a></li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <a href="https://www.spotify.com" target="_blank"><img id="spotify" class="icon" src="icons/spotify.png"></a>
-                    </div>
-                    <div class="col">
-                        <a href="https://www.github.com" target="_blank"><img id="github" class="icon" src="icons/github.png"></a>
-                    </div>
+                <div class="col">
+                    <ul>
+                        <li class="video">~/video</li>
+                        <li><a href="http://www.paramountplus.com" target="_blank">paramount</a></li>
+                        <li><a href="http://www.peacocktv.com" target="_blank">peacock</a></li>
+                        <li><a href="http://www.wowpresentsplus.com" target="_blank">wow</a></li>
+                        <li><a href="http://www.youtube.com" target="_blank">youtube</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li class="life">~/life</li>
+                        <li><a href="https://sdccd.instructure.com/" target="_blank">canvas</a></li>
+                        <li><a href="https://www.capitalone.com/" target="_blank">capital one</a></li>
+                        <li><a href="http://www.missionfed.com" target="_blank">mission fed</a></li>
+                        <li><a href="https://quickbooks.intuit.com/" target="_blank">quickbooks</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li class="misc">~/misc</li>
+                        <li><a href="http://www.discogs.com" target="_blank">discogs</a></li>
+                        <li><a href="http://www.github.com" target="_blank">github</a></li>
+                        <li><a href="http://www.goodreads.com" target="_blank">goodreads</a></li>
+                        <li><a href="http://www.wikipedia.org" target="_blank">wikipedia</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!-- 4 -->
-        <div class="col-4" id="rightBottom">
-            <div class="toDo text-center">
-                <h4 id="listHeader">To-do list:</h4>
-                <input type="text" id="myInput" placeholder="Type here...">
-                <span onclick="newElement()" class="addBtn">Add</span>
-                <ul id="myUL">
-                    <li class="checked">Walk Mazzy</li>
-                    <li>Go to the farmers market</li>
-                </ul>
-            </div>
     </div>
 </div>
-</div>
-
-
-<!-- <div class="container">
-    <h1 class="text-center">Hello, Avery!</h1>
-    <h2 class="text-center">
-        <div id="time"></div>
-    </h2>
-
-    <div class="row">
-        <div class="col-2 offset-1">
-            <h3 class="text-center">General</h3>
-                <div class="links text-center">
-                    <a href="https://www.gmail.com" target="_blank">Gmail</a>
-                    <br>
-                    <a href="https://www.missionfed.com" target="_blank">Banking</a>
-                    <br>
-                    <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
-                    <br>
-                    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-
-        <div class="col-2">
-            <h3 class="text-center">Web Dev</h3>
-                <div class="links text-center">
-                        <a href="https://www.github.com" target="_blank">GitHub</a>
-                        <br>
-                        <a href="https://www.dev.to" target="_blank">Dev.To</a>
-                        <br>
-                        <a href="https://www.hackerrank.com/dashboard" target="_blank">HackerRank</a>
-                        <br>
-                        <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a>
-                </div>
-            </div>
-    
-            <div class="col-2">
-                <h3 class="text-center">Social</h3>
-                    <div class="links text-center">
-                        <a href="https://www.twitter.com" target="_blank">Twitter</a>
-                        <br>
-                        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-                        <br>
-                        <a href="https://www.tumblr.com" target="_blank">Tumblr</a>
-                        <br>
-                        <a href="https://www.reddit.com" target="_blank">Reddit</a>
-                    </div>
-            </div>
-
-            <div class="col-2">
-                <h3 class="text-center">Blogs</h3>
-                    <div class="links text-center">
-                        <a href="https://www.realitytea.com" target="_blank">Reality Tea</a>
-                        <br>
-                        <a href="https://www.lovebscott.com" target="_blank">Love B. Scott</a>
-                        <br>
-                        <a href="https://www.realityblurb.com" target="_blank">Reality Blurb</a>
-                        <br>
-                        <a href="https://www.bravotv.com/the-daily-dish/news" target="_blank">The Daily Dish</a>
-                    </div>
-            </div>
-
-            <div class="col-2">
-                <h3 class="text-center">Stream</h3>
-                    <div class="links text-center">
-                            <a href="https://www.spotify.com" target="_blank">Spotify</a>
-                            <br>
-                            <a href="https://stitcher.com" target="_blank">Stitcher</a>
-                            <br>
-                            <a href="https://www.siriusxm.com" target="_blank">SiriusXM</a>
-                            <br>
-                            <a href="https://www.youtube.com" target="_blank">YouTube</a>
-                        </div>
-                </div>
-        </div>
-
-        <div class="col offset-3">
-        <div class="searchBar">
-            <form action="https://google.com/search" target="_blank">
-                <input class="searchInput" name="q" placeholder="Search" autocomplete="off">
-                <button class="btn" type="submit"><img class="searchIcon" src="searchIcon.png"></button>
-            </form>
-        </div>
-    </div>
-
-    </div> -->
 
 
 

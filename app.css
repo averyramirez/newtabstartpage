@@ -15,51 +15,32 @@ body {
 }
 
 .container {
-    margin-top: 80px;
+    height: 380px;
+    margin-top: 250px;
+    background-color: rgb(15, 15, 17, 0.3);
+    background-image: url('images/moon.png');
+    background-repeat: no-repeat;
+    background-size: 20%;
 }
 
-
-#leftTop {
-    /* border-color: #fff;
-    border-radius: 15px 15px;
-    border-style: solid;
-    border-width: 7px; */
-    margin-bottom: 25px;
-}
-
-#leftBottom {
-    padding-left: 165px;
-}
-
-#rightTop {
-    padding-right: 165px;
-}
-
-#rightBottom {
-    /* border-color: #fff;
-    border-style: solid;
-    border-radius: 15px 15px;
-    border-width: 7px; */
-    margin-bottom: 25px;
-}
 
 .date {
-    margin-bottom: 20px;
+    margin-left: 50px;
     margin-top: 50px;
-    font-size: 60px;
-    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(132, 98, 191);
 }
 
 .searchBar {
-    margin-top: 50px;
-    padding-bottom: 50px;
     border-width: 0px;
     border: none;
+    margin-left: 60px;
     outline: none;
 }
 
 .searchInput {
-    width: 250px;
+    width: 310px;
     outline: none;
     border-width: 0px;
     border: none;
@@ -77,7 +58,6 @@ body {
 ::placeholder { 
     color: white;
     opacity: 0.8;
-    font-family: 'Electrolize', sans-serif;
 }
 
 .searchIcon {
@@ -85,18 +65,7 @@ body {
     height: 15px;
 }
 
-.toDo {
-    color: white;
-}
-
-#listHeader {
-    margin-top: 20px;
-    font-size: 40px;
-    margin-left: 10px;
-}
-
 #myInput {
-    width: 150px;
     outline: none;
     border-width: 0px;
     border: none;
@@ -104,224 +73,49 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: white;
     margin-bottom: 20px;
-    margin-top: 40px;
-    margin-left: 20px;
 }
 
-.addBtn {
-    margin-left: 50px;
+li {
+    list-style-type: none;
 }
-
-ul {
-    background-color: transparent;
-    padding: 0;
-    list-style: none;
-
-}
-  
-
-ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    background-color: transparent;
-    font-size: 18px;
-    transition: 0.2s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-  
-
-/* ul li:nth-child(odd) {
-   background: #f9f9f9;
-}
-   */
-
-/* ul li:hover {
-    background: #ddd;
-} */
-  
-
-ul li.checked {
-    color: #fff;
-    text-decoration: line-through;
-}
-  
-
-ul li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
-}
-  
-
-.close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
-    color: white !important;
-}
-  
-.close:hover {
-    background-color: #cc7670;
-    color: white;
-}
-
-.icon {
-    width: 180px;
-    height: 180px;
-    margin-bottom: 20px;
-    border-radius: 24px 24px;
-}
-
-#youtube {
-    background: rgb(255,78,78);
-    background: linear-gradient(180deg, rgba(255,78,78,1) 0%, rgba(255,109,109,1) 50%, rgba(255,175,175,0.958420868347339) 100%);
-}
-
-#reddit {
-    background: rgb(255,253,118);
-    background: linear-gradient(180deg, rgba(255,253,118,1) 0%, rgba(255,185,63,1) 0%, rgba(255,229,147,1) 50%, rgba(255,239,208,0.958420868347339) 100%);
-}
-
-#mail {
-    background: rgb(255,253,118);
-    background: linear-gradient(180deg, rgba(255,253,118,1) 0%, rgba(255,185,63,1) 0%, rgba(255,229,147,1) 50%, rgba(255,239,208,0.958420868347339) 100%);
-}
-
-#instagram {
-    background: rgb(255,78,78);
-    background: linear-gradient(180deg, rgba(255,78,78,1) 0%, rgba(255,109,109,1) 50%, rgba(255,175,175,0.958420868347339) 100%);
-}
-
-#twitter {
-    background: rgb(255,253,118);
-    background: linear-gradient(180deg, rgba(255,253,118,1) 0%, rgba(255,185,63,1) 0%, rgba(255,229,147,1) 50%, rgba(255,239,208,0.958420868347339) 100%);
-}
-
-#spotify {
-    background: rgb(255,253,118);
-    background: linear-gradient(180deg, rgba(255,253,118,1) 0%, rgba(255,185,63,1) 0%, rgba(255,229,147,1) 50%, rgba(255,239,208,0.958420868347339) 100%);
-}
-
-#github {
-    background: rgb(255,78,78);
-    background: linear-gradient(180deg, rgba(255,78,78,1) 0%, rgba(255,109,109,1) 50%, rgba(255,175,175,0.958420868347339) 100%);
-}
-
-#linkedIn {
-    background: rgb(255,78,78);
-    background: linear-gradient(180deg, rgba(255,78,78,1) 0%, rgba(255,109,109,1) 50%, rgba(255,175,175,0.958420868347339) 100%);
-}
-
-/* .links {
-    background-color: rgba(43, 43, 43, 0.37);
-    border-radius: 15px 15px;
-}
-
-h1.text-center {
-    font-size: 35px;
-    font-family: 'Electrolize', sans-serif;
-    color: white;
-    text-shadow: 2px 2px grey;
-    letter-spacing: 10px;
-    justify-content: center;
-    margin-top: 220px;
-    margin-bottom: 30px;
-    padding-top: 40px;
-}
-
-h2.text-center {
-    font-size: 20px;
-    font-family: 'Electrolize', sans-serif;
-    color: white;
-    text-shadow: 1px 1px white;
-    letter-spacing: 5px;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-h3.text-center {
-    font-size: 22px;
-    color: white;
-    text-shadow: 2px 2px gray;
-    font-family: 'Electrolize', sans-serif;
-    letter-spacing: 5px;
-}
-
-.searchBar {
-    margin-top: 50px;
-    padding-bottom: 50px;
-    border-width: 0px;
-    border: none;
-    outline: none;
-}
-
-.searchInput {
-    width: 500px;
-    outline: none;
-    border-width: 0px;
-    border: none;
-    border-bottom: 1px solid white;
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-}
-
-.searchInput:focus, textarea:focus, select:focus{
-    outline: none;
-    border-width: 0px;
-    border: none;
-}
-
-::placeholder { 
-    color: white;
-    opacity: 0.8;
-    font-family: 'Electrolize', sans-serif;
-}
-
 
 a {
-    color: white;
-    font-size: 17px;
-    font-family: 'Electrolize', sans-serif;
-}
-
-a:link, a:visited, a:active {
+    color: white !important; 
     text-decoration: none !important;
-    color: white !important;
 }
 
 a:hover {
-    text-decoration: none !important;
-    text-shadow: 2px 2px gray;
-    color: white !important;
+    text-decoration: underline !important;
 }
 
-.container {
-    margin-left: 100px;
-    margin-right: 100px;
+.social {
+    color: rgb(191, 98, 98);
+    font-weight: bold;
 }
 
-.btn {
-    color: white !important;
+.video {
+    color: rgb(252, 178, 114);
+    font-weight: bold;
 }
 
-.btn:focus, .btn:active {
-    outline: none !important;
-    box-shadow: none !important;
+.life {
+    color: rgb(148, 235, 172);
+    font-weight: bold;
 }
 
-.searchIcon {
-    width: 17px;
-    height: 17px;
-} */
+.misc {
+    color: rgb(134, 152, 252);
+    font-weight: bold;
+}
+
+.links {
+    margin-top: 50px;
+    margin-left: 230px;
+    margin-right: 140px;
+}
+
+.main {
+    color: white;
+    margin-top: 20px;
+
+}
